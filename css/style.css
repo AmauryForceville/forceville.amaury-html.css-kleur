@@ -1,5 +1,73 @@
+:root {
+    --primary-color: rgb(244, 244, 245);
+    --secondary-color: rgb( 38, 131,  76);
+    --accent-color: rgb( 34, 34, 34);
+    --Schaduw: 2px 2px 5px rgb(25, 45, 33);
+    --hover: rgb( 38, 131,  76);
+}
+body.dark {
+    --primary-color: rgb(34, 34, 34);
+    --secondary-color: rgb(38, 131, 76);
+    --accent-color: rgb(244, 244, 245);
+    --Schaduw: 2px 2px 5px rgb(25, 45, 33);
+    --hover: rgb(38, 131, 76);
+}
+body.color {
+    --primary-color: rgb(54, 54, 92);
+    --secondary-color: rgb(54, 104, 105);
+    --accent-color: rgb( 34, 34, 34);
+    --Schaduw: 2px 2px 5px rgb(25, 45, 33);
+    --hover: rgb( 38, 131,  76);
+}
 * {
-    padding: 0;
+    padding: 10px 10px 10px 10px;
     margin: 0;
     box-sizing: border-box;
+}
+body {
+    background-color: var(--primary-color);
+    font-family: "Anton", sans-serif;
+    padding: 10px 10px 10px 10px;
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 60px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+q {
+    font-family: "Anton", sans-serif;
+    font-size: 35px;
+    color: var(--accent-color);
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    max-width: 1328px;
+    max-height: auto;
+    margin: 0 auto;
+}
+button {                            /*staat niet in het midden*/
+    display: block;
+    width : 200px;
+    height : 40px;
+    margin: 0 auto;
+    background-color: rgb(38, 131, 76);
+    color: rgb(244, 244, 245);
+    border-radius: 12px;
+    box-shadow: var(--Schaduw);
+
+}
+button:hover {
+    opacity: 80%;
+}
+footer {
+    font-size: 12px;
+    color: var(--accent-color);
+    text-align: center;
 }
