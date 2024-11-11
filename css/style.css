@@ -57,8 +57,7 @@ button {                            /*staat niet in het midden*/
     width : 200px;
     height : 40px;
     margin: 0 auto;
-    background-color: rgb(38, 131, 76);
-    color: rgb(244, 244, 245);
+    background-color: var(--secondary-color);
     border-radius: 12px;
     box-shadow: var(--Schaduw);
 
